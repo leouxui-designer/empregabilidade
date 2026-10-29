@@ -460,10 +460,11 @@ main a.btn{color:#fff}main a.btn.alt{color:#141414}
 .path.dark .ico{background:linear-gradient(110deg,#2ca942 15.8%,#55b13a 54.8%,#52b934 86.6%);color:#fff}
 .path p{flex:1}
 /* in-page switcher */
-.switchbar{background:#fff;padding:80px 0 0;text-align:center}
+.switchbar{background:#fff;padding:104px 0 0;text-align:center}
 .switchbar:has(+ .soft){background:#f1f3f5}
 .switchbar + section{padding-top:32px}
-@media (min-width:992px){.switchbar{padding-top:96px}main .switchbar + section{padding-top:48px}}
+@media (min-width:992px){main .switchbar + section{padding-top:48px}}
+@media (min-width:1360px){.switchbar{padding-top:127px}}
 .seg2{display:inline-flex;background:#e9ecef;border-radius:80px;padding:4px}
 .seg2 a,main .seg2 a{display:block;padding:12px 32px;border-radius:80px;font:600 16px/16px Roboto,sans-serif;text-decoration:none;color:#141414}
 .seg2 a:hover{background:rgba(0,0,0,.06)}
@@ -471,9 +472,10 @@ main a.btn{color:#fff}main a.btn.alt{color:#141414}
 .crumbs{justify-content:center}
 .sec-head .crumbs a{color:#1F8832}
 /* shell additions */
-.nav-links a[aria-current=page]{color:#1F8832;font-weight:700;border-bottom:3px solid #2ca942;padding-bottom:4px}
+.nav-links a[aria-current=page]{color:#1F8832;font-weight:700}
 .collapse:not(.show){display:none}
-@media (min-width:992px){.topo .navbar-collapse{display:none!important}}
+@media (min-width:1360px){.topo .navbar-collapse{display:none!important}}
+@media (min-width:992px) and (max-width:1359px){.topo .navbar.d-lg-none{display:flex!important}.topo .container-header.d-lg-flex{display:none!important}}
 .rodape a:focus-visible,.topo a:focus-visible,.topo button:focus-visible{outline:3px solid #7ab934;outline-offset:2px}
 
 /* hero: vídeo em cima, texto centralizado (Figma 35147:16637) */
@@ -692,3 +694,20 @@ main .t-body h3{font-size:30px;line-height:1.1;letter-spacing:-1px;margin:0 0 12
 @media (min-width:992px){.t-body{padding:48px 40px}main .t-body h3{font-size:38px;margin-bottom:16px}.t-lead{font-size:18px;margin-bottom:40px}.t-steps{margin-bottom:40px}}
 .t-body{display:flex;flex-direction:column;justify-content:center}
 @media (min-width:992px){.t-photo{max-height:560px}.t-panel{min-height:0}.t-panel .t-photo{height:100%}}
+
+.logo-img{display:block;height:auto;max-width:none;flex:none}
+.topo .logo-img{width:179px;aspect-ratio:4096/1100}
+.rodape .logo-img{width:119px;aspect-ratio:4096/1101}
+.matricula-btn{height:48px;padding-top:0;padding-bottom:0;white-space:nowrap}
+#q-sit{text-align:center}
+.t-cta .btn svg{flex:none;width:20px;height:20px}
+.t-stage{display:grid}
+.t-stage>.t-panel{grid-area:1/1}
+.t-stage>.t-panel[hidden]{display:grid!important;visibility:hidden}
+.t-stage:not(:has(.t-panel:not([hidden]))){display:none}
+@media (max-width:991px){.t-panel{grid-template-columns:minmax(0,1fr)}.t-photo img{object-position:center top}}
+.t-body{min-width:0}
+#p3 .t-cta{display:flex;flex-wrap:wrap;gap:12px}
+#p3 .t-cta .btn{flex:1 1 auto;width:auto;padding:16px 18px;font-size:16px;line-height:16px;white-space:nowrap;justify-content:center;flex-wrap:nowrap;gap:8px}
+#p3 .t-cta .badge{padding:2px 8px}
+@media (max-width:420px){#p3 .t-cta .btn{white-space:normal;flex-wrap:wrap;text-align:center;line-height:1.2;padding:14px 16px;gap:6px 8px}}

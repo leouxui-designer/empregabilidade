@@ -104,7 +104,7 @@ footer{background:#22292b;color:#fff;padding:40px 120px}
     e.preventDefault();
     if(!inp.value){campo.classList.add('bad');inp.setAttribute('aria-invalid','true');inp.focus();return}
     btn.disabled=true;
-    G.login(inp.value,false).then(function(ok){
+    G.login(inp.value,true).then(function(ok){
       if(ok){location.replace(next);return}
       btn.disabled=false;
       campo.classList.add('bad');inp.setAttribute('aria-invalid','true');inp.select();

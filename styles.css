@@ -352,9 +352,6 @@ fieldset{border:0;padding:0;margin:0 0 16px}
 .check:has(input:checked){border-color:var(--green-dk);background:var(--mint)}
 .check:has(input:focus-visible){outline:3px solid var(--blue);outline-offset:2px}
 .check small{display:block;font-weight:400;color:var(--muted)}
-.recaptcha{display:flex;align-items:center;gap:12px;border:1px solid #d3d3d3;background:#f9f9f9;border-radius:6px;padding:14px;max-width:304px;font-size:.9rem;margin-bottom:16px}
-.recaptcha i{width:26px;height:26px;border:2px solid #c1c1c1;background:#fff;border-radius:3px;flex:none}
-.recaptcha small{margin-left:auto;font-size:.6rem;color:#555;text-align:center;line-height:1.1}
 .success{display:none;text-align:center;padding:24px 8px}
 .success .ok{width:72px;height:72px;border-radius:50%;background:var(--mint);color:var(--green-dk);display:grid;place-items:center;margin:0 auto 16px}
 .sent form.f .formbody{display:none}
@@ -581,7 +578,6 @@ main .e-form{background:#f1f3f5}
 .e-submit p{margin:0;max-width:544px;text-align:center;font-size:14px;line-height:1.4;color:rgba(0,0,0,.8)}
 .e-submit p a{color:inherit;text-decoration:underline}
 .e-cta--green{width:auto;min-width:185px;padding:16px 28px;font-weight:600}
-.e-formbox .recaptcha{margin:0 auto 24px}
 /* faq */
 main .e-faq{background:#fff}
 @media (min-width:992px){main .e-faq{padding:80px 0}}

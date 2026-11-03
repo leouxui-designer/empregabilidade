@@ -461,7 +461,7 @@ main a.btn{color:#fff}main a.btn.alt{color:#141414}
 .switchbar:has(+ .soft){background:#f1f3f5}
 .switchbar + section{padding-top:32px}
 @media (min-width:992px){main .switchbar + section{padding-top:48px}}
-@media (min-width:1360px){.switchbar{padding-top:127px}}
+@media (min-width:1540px){.switchbar{padding-top:127px}}
 .seg2{display:inline-flex;background:#e9ecef;border-radius:80px;padding:4px}
 .seg2 a,main .seg2 a{display:block;padding:12px 32px;border-radius:80px;font:600 16px/16px Roboto,sans-serif;text-decoration:none;color:#141414}
 .seg2 a:hover{background:rgba(0,0,0,.06)}
@@ -471,8 +471,8 @@ main a.btn{color:#fff}main a.btn.alt{color:#141414}
 /* shell additions */
 .nav-links a[aria-current=page]{color:#1F8832;font-weight:700}
 .collapse:not(.show){display:none}
-@media (min-width:1360px){.topo .navbar-collapse{display:none!important}}
-@media (min-width:992px) and (max-width:1359px){.topo .navbar.d-lg-none{display:flex!important}.topo .container-header.d-lg-flex{display:none!important}}
+@media (min-width:1540px){.topo .navbar-collapse{display:none!important}}
+@media (min-width:992px) and (max-width:1539px){.topo .navbar.d-lg-none{display:flex!important}.topo .container-header.d-lg-flex{display:none!important}}
 .rodape a:focus-visible,.topo a:focus-visible,.topo button:focus-visible{outline:3px solid #7ab934;outline-offset:2px}
 
 /* hero: vídeo em cima, texto centralizado (Figma 35147:16637) */
@@ -708,3 +708,25 @@ main .t-body h3{font-size:30px;line-height:1.1;letter-spacing:-1px;margin:0 0 12
 #p3 .t-cta .badge{padding:2px 8px}
 @media (max-width:420px){#p3 .t-cta .btn{white-space:normal;flex-wrap:wrap;text-align:center;line-height:1.2;padding:14px 16px;gap:6px 8px}}
 .hero-text .lead strong{display:block;margin-top:12px}
+
+/* Acesso ao portal (estado "Em breve" controlado por portal.js) */
+.portal-entry{display:inline-flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;text-decoration:none}
+.portal-entry .badge{margin:0;padding:2px 8px;font-size:10px;line-height:1.4;background:#303030;white-space:nowrap}
+.portal-entry[hidden]{display:none}
+.topo .options .portal-entry,.topo .portal-entry--menu{padding:15px 24px;border:1px solid #141414;border-radius:80px;background:transparent;color:#141414;font:600 16px/16px Roboto,sans-serif;white-space:nowrap}
+.topo .portal-entry:hover{background:#f1f3f5}
+.topo .portal-entry.is-soon{border-color:#767c80;color:#5b6166;cursor:not-allowed}
+.topo .portal-entry.is-soon:hover{background:transparent}
+.topo .options{align-items:center}
+.topo .portal-entry--menu{display:flex;margin:16px 16px 12px}
+.portal-entry--link{cursor:pointer;font-weight:600;text-decoration:none}
+.portal-entry--link .portal-entry__txt{color:#1F8832;text-decoration:underline;text-underline-offset:3px}
+.has-account{margin:12px 0 0;font-size:.95rem;color:var(--ink-2)}
+.rodape .portal-entry--footer{color:#c7c7c7}
+.rodape .portal-entry--footer:not(.is-soon){color:#fff}
+.rodape .portal-entry--footer .badge{background:#fff;color:#22272a}
+.rodape .portal-entry.is-soon{cursor:not-allowed}
+.topo .container-header .menu-principal ul li{white-space:nowrap;padding:8px 8px}
+.topo .options{gap:8px}
+.topo .container-header{max-width:1600px}
+.portal-entry--link.is-soon{cursor:not-allowed}
